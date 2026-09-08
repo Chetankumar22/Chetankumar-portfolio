@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chetankumar Sirokha | Data Engineer & Python Developer</title>
+  <meta name="description" content="Portfolio of Chetankumar Gangjee Sirokha — Data Engineer and Python Developer specializing in Python, FastAPI, ETL, Azure, PostgreSQL, Kubernetes and FinTech systems.">
+  <meta name="keywords" content="Data Engineer, Python Developer, FastAPI, Azure, ETL, PostgreSQL, Kubernetes, FinTech, Pune">
+  <meta name="author" content="Chetankumar Gangjee Sirokha">
+  <meta property="og:title" content="Chetankumar Sirokha | Data Engineer & Python Developer">
+  <meta property="og:description" content="Nearly 6 years of experience across Data Engineering, Python, ETL, Azure and Banking/FinTech systems.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b1020">
+  <style>
+    :root {
+      --bg:#070b16; --panel:#0e1528; --panel2:#121b31; --text:#eef4ff;
+      --muted:#a7b4cc; --line:rgba(255,255,255,.10); --accent:#62a6ff;
+      --accent2:#8b7cff; --good:#65e6b3; --shadow:0 24px 70px rgba(0,0,0,.35);
+      --radius:22px; --max:1160px;
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;background:
+      radial-gradient(circle at 80% 0%,rgba(98,166,255,.16),transparent 32rem),
+      radial-gradient(circle at 10% 20%,rgba(139,124,255,.12),transparent 28rem),
+      var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));z-index:1000;width:0}
+    header{position:sticky;top:0;z-index:100;background:rgba(7,11,22,.72);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;letter-spacing:-.03em}
+    .brand span{color:var(--accent)}
+    .links{display:flex;gap:25px;align-items:center;font-size:.93rem;color:var(--muted)}
+    .links a:hover{color:var(--text)}
+    .nav-actions{display:flex;gap:9px;align-items:center}
+    button,.btn{border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--text);padding:10px 15px;border-radius:12px;cursor:pointer;font:inherit}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));border:0;color:#07101f;font-weight:800;box-shadow:0 12px 30px rgba(98,166,255,.22)}
+    .btn:hover,button:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.22)}
+    .menu{display:none}
+    .hero{padding:95px 0 75px;min-height:680px;display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center}
+    .eyebrow{display:inline-flex;gap:8px;align-items:center;padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.04);color:#c9d8f0;font-size:.85rem}
+    .dot{width:8px;height:8px;border-radius:50%;background:var(--good);box-shadow:0 0 15px var(--good)}
+    h1{font-size:clamp(3rem,7vw,5.9rem);line-height:.98;letter-spacing:-.065em;margin:22px 0}
+    .gradient{background:linear-gradient(100deg,#fff 20%,#9bc7ff 58%,#a99cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{font-size:1.13rem;color:var(--muted);max-width:700px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,.075),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:28px;padding:27px;box-shadow:var(--shadow)}
+    .orb{height:260px;border-radius:24px;background:
+      linear-gradient(135deg,rgba(98,166,255,.20),rgba(139,124,255,.14)),
+      radial-gradient(circle at 65% 25%,rgba(255,255,255,.16),transparent 30%);
+      display:grid;place-items:center;position:relative;overflow:hidden}
+    .orb:before,.orb:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.14);border-radius:50%;inset:28px;transform:rotate(25deg)}
+    .orb:after{inset:55px;transform:rotate(-25deg)}
+    .initials{font-size:4.4rem;font-weight:900;letter-spacing:-.08em;z-index:1}
+    .mini{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:13px}
+    .mini div{padding:13px;border:1px solid var(--line);border-radius:15px;background:rgba(0,0,0,.12)}
+    .mini b{display:block;font-size:1.35rem}.mini span{color:var(--muted);font-size:.78rem}
+    section{padding:78px 0}
+    .section-head{display:flex;justify-content:space-between;gap:25px;align-items:end;margin-bottom:30px}
+    .kicker{color:var(--accent);font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.14em}
+    h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.05;letter-spacing:-.045em;margin:7px 0}
+    .section-head p{color:var(--muted);max-width:550px;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:.25s}
+    .card:hover{transform:translateY(-5px);border-color:rgba(98,166,255,.35);box-shadow:0 18px 50px rgba(0,0,0,.2)}
+    .icon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:rgba(98,166,255,.12);font-size:1.2rem}
+    .card h3{margin:15px 0 8px}.card p{color:var(--muted);margin:0}
+    .tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}
+    .tag{font-size:.76rem;color:#c9d8f0;border:1px solid var(--line);border-radius:999px;padding:5px 9px;background:rgba(255,255,255,.035)}
+    .timeline{position:relative;margin-left:8px;padding-left:30px;border-left:1px solid var(--line)}
+    .role{position:relative;margin-bottom:35px}
+    .role:before{content:"";position:absolute;left:-36px;top:6px;width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px rgba(98,166,255,.10)}
+    .role-top{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .company{color:#cbd8ec}.date{color:var(--accent);font-size:.86rem}
+    .role ul{color:var(--muted);padding-left:20px}.role li{margin:8px 0}
+    .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .skill-row{padding:18px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.035)}
+    .skill-row b{display:block;margin-bottom:9px}.skill-row span{color:var(--muted)}
+    .contact{background:linear-gradient(135deg,rgba(98,166,255,.12),rgba(139,124,255,.10));border:1px solid var(--line);border-radius:28px;padding:38px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}
+    .contact p{color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.9rem}
+    .copy{cursor:pointer}.toast{position:fixed;right:20px;bottom:20px;background:#f5f8ff;color:#08101e;padding:12px 16px;border-radius:12px;font-weight:700;transform:translateY(90px);opacity:0;transition:.25s;z-index:2000}
+    .toast.show{transform:none;opacity:1}
+    .reveal{opacity:0;transform:translateY(18px);transition:.65s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:850px){
+      .links{display:none}.menu{display:block}.hero{grid-template-columns:1fr;padding-top:65px}.grid{grid-template-columns:1fr}.skills{grid-template-columns:1fr}.contact{grid-template-columns:1fr}.wrap{width:min(var(--max),calc(100% - 28px))}
+      .mobile-links{display:none;position:absolute;left:14px;right:14px;top:70px;padding:15px;background:#0d1425;border:1px solid var(--line);border-radius:16px}.mobile-links.open{display:grid;gap:12px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Chetankumar Gangjee Sirokha",
+    "jobTitle":"Data Engineer and Python Developer",
+    "email":"cgs22297@gmail.com",
+    "telephone":"+91 8329104865",
+    "address":{"@type":"PostalAddress","addressLocality":"Pune","addressRegion":"Maharashtra","addressCountry":"IN"},
+    "knowsAbout":["Python","FastAPI","ETL","Data Engineering","Microsoft Azure","PostgreSQL","Azure Cosmos DB","Kubernetes","Grafana","Banking Technology","FinTech"]
+  }
+  </script>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header>
+  <nav class="wrap">
+    <a class="brand" href="#top">CS<span>.</span></a>
+    <div class="links">
+      <a href="#services">Services</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button id="theme" aria-label="Toggle theme">☼</button>
+      <button class="menu" id="menu">☰</button>
+      <a class="btn primary" href="Chetankumar_Sirokha_Resume.pdf" target="_blank">Resume ↗</a>
+    </div>
+    <div class="mobile-links" id="mobileLinks">
+      <a href="#services">Services</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="wrap hero">
+    <div class="reveal">
+      <div class="eyebrow"><span class="dot"></span> Available for opportunities & freelance projects</div>
+      <h1><span class="gradient">Data Engineer</span><br>& Python Developer.</h1>
+      <p>I build reliable data pipelines, backend APIs and cloud-native FinTech solutions. Nearly 6 years of experience across banking, ETL, automation, Azure and production engineering.</p>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Let's work together →</a>
+        <a class="btn" href="Chetankumar_Sirokha_Resume.pdf" target="_blank">View CV</a>
+      </div>
+    </div>
+    <aside class="hero-card reveal">
+      <div class="orb"><div class="initials">CGS</div></div>
+      <div class="mini">
+        <div><b>~6 yrs</b><span>Experience</span></div>
+        <div><b>FinTech</b><span>Domain focus</span></div>
+        <div><b>Azure</b><span>Cloud</span></div>
+        <div><b>Python</b><span>Backend & data</span></div>
+      </div>
+    </aside>
+  </section>
+
+  <section id="services" class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">What I do</div><h2>Solutions that move data<br>and products forward.</h2></div><p>Focused on practical engineering: scalable APIs, dependable data workflows, automation and cloud deployment.</p></div>
+    <div class="grid">
+      <article class="card reveal"><div class="icon">⚙️</div><h3>Python & FastAPI</h3><p>Production-ready backend APIs and application services designed for performance and maintainability.</p><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQL</span></div></article>
+      <article class="card reveal"><div class="icon">⛓️</div><h3>Data Engineering & ETL</h3><p>ETL pipelines, data migration, transformation and warehouse solutions for centralized analytics.</p><div class="tags"><span class="tag">ETL</span><span class="tag">Data Warehouse</span><span class="tag">PostgreSQL</span></div></article>
+      <article class="card reveal"><div class="icon">☁️</div><h3>Azure & Cloud</h3><p>Cloud-native workflows using Azure Functions, Cosmos DB, CI/CD and Kubernetes-based deployments.</p><div class="tags"><span class="tag">Azure</span><span class="tag">Cosmos DB</span><span class="tag">Kubernetes</span></div></article>
+      <article class="card reveal"><div class="icon">📊</div><h3>Automation & Reporting</h3><p>Operational automation, banking reports, monitoring utilities and analytics dashboards.</p><div class="tags"><span class="tag">Shell</span><span class="tag">Grafana</span><span class="tag">Linux</span></div></article>
+      <article class="card reveal"><div class="icon">🏦</div><h3>FinTech Engineering</h3><p>Hands-on experience with banking systems, credit-card statement processing, audit and reconciliation workflows.</p><div class="tags"><span class="tag">Banking</span><span class="tag">RBI Reports</span><span class="tag">FinTech</span></div></article>
+      <article class="card reveal"><div class="icon">🚀</div><h3>Production Engineering</h3><p>Deployment, troubleshooting, monitoring and CI/CD practices for enterprise applications.</p><div class="tags"><span class="tag">Azure Pipelines</span><span class="tag">Git</span><span class="tag">Docker</span></div></article>
+    </div>
+  </section>
+
+  <section id="work" class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">Selected work</div><h2>Experience with real<br>enterprise systems.</h2></div><p>Work across FinTech, banking operations, data platforms and reporting automation.</p></div>
+    <div class="grid">
+      <article class="card reveal"><div class="kicker">FinTech · Current</div><h3>Credit Card Smart Statements</h3><p>Developed a credit-card smart statement module with high-performance FastAPI services, automated statement-fetching jobs and cloud data storage.</p><div class="tags"><span class="tag">FastAPI</span><span class="tag">Azure Functions</span><span class="tag">Cosmos DB</span><span class="tag">PostgreSQL</span></div></article>
+      <article class="card reveal"><div class="kicker">Data Platform</div><h3>Enterprise Data Warehouse</h3><p>Designed a centralized warehouse architecture integrating multiple standalone databases and built ETL workflows for migration and reporting.</p><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">ETL</span><span class="tag">Grafana</span></div></article>
+      <article class="card reveal"><div class="kicker">Banking Operations</div><h3>Banking Report Automation</h3><p>Automated daily banking and RBI report generation, delivery and monitoring to support audit and reconciliation activities.</p><div class="tags"><span class="tag">Shell</span><span class="tag">Linux</span><span class="tag">SQL</span><span class="tag">Automation</span></div></article>
+    </div>
+  </section>
+
+  <section class="wrap" id="experience">
+    <div class="section-head reveal"><div><div class="kicker">Career</div><h2>Where I've made an impact.</h2></div></div>
+    <div class="timeline">
+      <article class="role reveal">
+        <div class="role-top"><div><h3>Software Engineer</h3><div class="company">Technogrowth Software Solutions · Client: Bajaj FinServ · Bajaj PayTech</div></div><div class="date">Nov 2025 — Present</div></div>
+        <ul><li>Built high-performance FastAPI services for a credit-card smart statement module.</li><li>Implemented Azure Functions for daily, previous-month and last-3-month statement fetching.</li><li>Worked with Azure Cosmos DB, PostgreSQL, Kubernetes and Azure CI/CD.</li><li>Supported production deployments, troubleshooting and application monitoring.</li></ul>
+      </article>
+      <article class="role reveal">
+        <div class="role-top"><div><h3>System Engineer</h3><div class="company">Tata Consultancy Services (TCS) · SBI Core Banking Services / TCS CodeVita</div></div><div class="date">Feb 2020 — Jun 2025</div></div>
+        <ul><li>Generated and maintained daily banking, CAS and RBI reports.</li><li>Automated report generation and delivery using Shell Scripting.</li><li>Monitored batch jobs and improved operational efficiency through automation.</li><li>Designed a centralized data warehouse, ETL pipelines and Grafana dashboards.</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="wrap">
+    <div class="section-head reveal"><div><div class="kicker">Toolkit</div><h2>Technical skills.</h2></div></div>
+    <div class="skills">
+      <div class="skill-row reveal"><b>Programming & APIs</b><span>Python · FastAPI · SQL · Shell Scripting · Bash</span></div>
+      <div class="skill-row reveal"><b>Data Engineering</b><span>ETL Pipelines · Data Warehouse Design · Migration · Transformation · Data Modeling</span></div>
+      <div class="skill-row reveal"><b>Databases</b><span>PostgreSQL · Azure Cosmos DB · Oracle SQL · Relational Databases</span></div>
+      <div class="skill-row reveal"><b>Cloud & DevOps</b><span>Microsoft Azure · Azure Functions · Azure CI/CD · Kubernetes · Production Deployment</span></div>
+      <div class="skill-row reveal"><b>Monitoring & Visualization</b><span>Grafana Dashboards · Reporting Automation · Data Visualization</span></div>
+      <div class="skill-row reveal"><b>Tools & Platforms</b><span>Git · Linux · Unix · Docker (Basic)</span></div>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap">
+    <div class="contact reveal">
+      <div><div class="kicker">Let's connect</div><h2>Have a data, backend or FinTech problem?</h2><p>I'm open to relevant job opportunities, freelance work and technical collaborations.</p></div>
+      <div class="cta">
+        <a class="btn primary" href="mailto:cgs22297@gmail.com?subject=Project%20or%20Opportunity%20for%20Chetankumar">Email me</a>
+        <button class="copy" id="copy">Copy email</button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap" style="display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap"><span>© <span id="year"></span> Chetankumar Gangjee Sirokha</span><span>Data Engineering · Python · Cloud · FinTech</span></div></footer>
+<div class="toast" id="toast">Email copied ✓</div>
+
+<script>
+  const progress=document.getElementById('progress');
+  window.addEventListener('scroll',()=>{const h=document.documentElement; progress.style.width=((h.scrollTop/(h.scrollHeight-h.clientHeight))*100)+'%';});
+  const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  document.getElementById('year').textContent=new Date().getFullYear();
+  document.getElementById('copy').addEventListener('click',async()=>{
+    await navigator.clipboard.writeText('cgs22297@gmail.com');
+    const t=document.getElementById('toast'); t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),1800);
+  });
+  document.getElementById('menu').addEventListener('click',()=>document.getElementById('mobileLinks').classList.toggle('open'));
+  document.querySelectorAll('#mobileLinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('mobileLinks').classList.remove('open')));
+  document.getElementById('theme').addEventListener('click',()=>{
+    document.body.classList.toggle('light');
+    const light=document.body.classList.contains('light');
+    document.documentElement.style.setProperty('--bg',light?'#f6f8fc':'#070b16');
+    document.documentElement.style.setProperty('--panel',light?'#ffffff':'#0e1528');
+    document.documentElement.style.setProperty('--panel2',light?'#eef3fb':'#121b31');
+    document.documentElement.style.setProperty('--text',light?'#10182a':'#eef4ff');
+    document.documentElement.style.setProperty('--muted',light?'#5d6a80':'#a7b4cc');
+    document.documentElement.style.setProperty('--line',light?'rgba(16,24,42,.12)':'rgba(255,255,255,.10)');
+    document.getElementById('theme').textContent=light?'☾':'☼';
+  });
+</script>
+</body>
+</html>
